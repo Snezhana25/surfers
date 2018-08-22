@@ -1,0 +1,51 @@
+.description, .features, .dimensions {
+  text-transform: uppercase;
+  color: $black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-right: 8px;
+  padding-bottom: 8px;
+}
+
+.tabs>.content-right {
+  display: none;
+  padding: 15px;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tabs>input {
+  display: none;
+  position: absolute;
+}
+.tabs>label{
+  display: inline-block;
+}
+.tabs>label:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #00b0ff;
+}
+.tabs>input:checked+label {
+  border-bottom: 3px solid #00b0ff;
+}
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3{
+  display: block;
+}

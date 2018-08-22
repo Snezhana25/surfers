@@ -1,0 +1,95 @@
+
+.description-surfboards {
+  margin: 0 auto;
+  background: url("../images/Corner.png") no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  padding: 45px;
+
+  .triangle {
+    position: absolute;
+    left: 0;
+  }
+
+}
+
+.block-left, .block-right {
+  position: relative;
+  z-index: 10;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.block-right {
+  margin-left: 49px;
+}
+
+.tab-example {
+  flex-direction: column;
+  Justify-content: center;
+  display: flex;
+  align-items:flex-end;
+
+  .tabs-photo {
+    width: 61px;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+  .activeTab {
+    border: 2px solid $light-blue;
+  }
+  #selected-img{
+    width: 407px;
+    height: 526px;
+  }
+
+
+}
+
+
+.right-title {
+  font-size: 20px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 41px;
+}
+
+.content-right {
+  display: none;
+  margin-top: 27px;
+}
+
+.show-content {
+  display: block;
+}
+
+.card-size {
+  background-color: $white;
+  width: 70%;
+  margin: 0 auto;
+  .action {
+    width: 100%;
+    height: 2px;
+    border-bottom: 3px solid $light-blue;
+  }
+
+}
+
+.block-price {
+  display: flex;
+  margin-top: 36px;
+}
+.price{
+  font-size: 24px;
+  color: $black;
+  margin-right: 30px;
+}
+
+
+

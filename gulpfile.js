@@ -164,7 +164,7 @@ gulp.task('js-app', function () {
                     }
                 ]
             },
-            plugins: [
+            /*plugins: [
                 new UglifyJSPlugin({
                     sourceMap: true,
                     uglifyOptions: {
@@ -175,7 +175,7 @@ gulp.task('js-app', function () {
                         }
                     }
                 })
-            ]
+            ]*/
         }))
 
         .pipe(gulp.dest(bases.dist + 'js'))
