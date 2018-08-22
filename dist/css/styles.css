@@ -365,6 +365,8 @@ hr {
   font-weight: 400;
 }
 
+@font-face font-family: "kram"
+src : url("../fonts/kraM.ttf");
 .btn-price {
   padding: 20px 40px 20px;
   background-color: #00b0ff;
