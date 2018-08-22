@@ -44,14 +44,8 @@
   .activeTab {
     border: 2px solid $light-blue;
   }
-  #selected-img{
-    width: 407px;
-    height: 526px;
-  }
-
 
 }
-
 
 .right-title {
   font-size: 20px;
@@ -89,6 +83,9 @@
   font-size: 24px;
   color: $black;
   margin-right: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
 }
 
 

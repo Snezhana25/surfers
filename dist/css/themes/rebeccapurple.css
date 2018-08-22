@@ -356,10 +356,21 @@ hr {
   margin-top: 150px;
 }
 
+.read-more {
+  position: absolute;
+  bottom: 0;
+  color: #00b0ff;
+  border-bottom: 2px solid #00b0ff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .btn-price {
   padding: 20px 40px 20px;
   background-color: #00b0ff;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .header {
@@ -521,6 +532,13 @@ hr {
   font-size: 24px;
   color: #000;
   margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
 }
 
 .description, .features, .dimensions {
