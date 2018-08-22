@@ -213,10 +213,6 @@ gulp.task('copy', function () {
         .pipe(gulp.dest(bases.dist + 'images/'))
         .pipe(reload({stream: true}));
 
-    gulp.src(bases.app + 'fonts/**/*.*')
-        .pipe(size({gzip: true, showFiles: true}))
-        .pipe(gulp.dest(bases.dist + 'fonts/'))
-        .pipe(reload({stream: true}));
 
     gulp.src(bases.app + 'video/**/*.*')
         .pipe(size({gzip: true, showFiles: true}))

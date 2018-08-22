@@ -67,16 +67,22 @@ h1{
   font-size: 34px;
   font-weight: 700;
   letter-spacing: 1px;
+  cursor: none;
 }
 .soc-icon a{
   display: inline-block;
   width: 36px;
   height: 36px;
   margin-left: 10px;
+  transition: .8s ease-in-out;
+}
+.soc-icon a:hover{
+  transform: rotate(360deg);
 }
 .title{
   text-align: center;
   margin-top: 121px;
+  font-style: italic;
   p{
     font-size: 24px;
     color: $white;
@@ -97,15 +103,18 @@ hr {
 }
 .card{
   margin-top: 150px;
+  text-align: center;
 }
 .read-more{
   position: absolute;
   bottom: 0;
+  left: 0;
   color: $light-blue;
   border-bottom: 2px solid $light-blue;
   font-size: 16px;
   font-weight: 400;
 }
+
 
 
 

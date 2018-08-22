@@ -52,6 +52,7 @@
   color: $black;
   font-weight: 700;
   margin-bottom: 41px;
+  text-align: left;
 }
 
 .content-right {
@@ -67,6 +68,9 @@
   background-color: $white;
   width: 70%;
   margin: 0 auto;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
+  position: relative;
+  display: inline-block;
   .action {
     width: 100%;
     height: 2px;
@@ -78,6 +82,7 @@
 .block-price {
   display: flex;
   margin-top: 36px;
+  margin-bottom: 84px;
 }
 .price{
   font-size: 24px;
