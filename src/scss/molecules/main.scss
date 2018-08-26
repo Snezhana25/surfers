@@ -92,6 +92,27 @@
   align-items: center;
   font-weight: 700;
 }
+//.left-arrow, .right-arrow{
+//  position: absolute;
+//  right: 0;
+//  z-index: 10;
+//  display: inline-block;
+//}
+.arrow{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: -42px;
+  top: 50px;
+}
+.left-arrow{
+  padding: 20px;
+  background: url("../images/left-arrow.png") no-repeat;
+}
+.right-arrow{
+  padding: 20px;
+  background: url("../images/right-arrow.png") no-repeat;
+}
 
 
 
