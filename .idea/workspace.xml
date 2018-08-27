@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -134,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/src/scss/molecules/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1935">
-              <caret line="129" lean-forward="true" selection-start-line="111" selection-end-line="129" />
+              <caret line="129" selection-start-line="111" selection-end-line="129" />
             </state>
           </provider>
         </entry>
@@ -253,7 +253,7 @@
               <item name="surfers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="organisms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,16 +296,15 @@
       <option name="presentableId" value="Default" />
       <updated>1534850797453</updated>
       <workItem from="1534850799659" duration="32501000" />
-      <workItem from="1534959929664" duration="17069000" />
+      <workItem from="1534959929664" duration="17147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49570000" />
+    <option name="totallyTimeSpent" value="49648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="27" width="1270" height="806" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16449511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -521,7 +520,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -531,7 +530,7 @@
     <entry file="file://$PROJECT_DIR$/src/scss/molecules/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
-          <caret line="129" lean-forward="true" selection-start-line="111" selection-end-line="129" />
+          <caret line="129" selection-start-line="111" selection-end-line="129" />
         </state>
       </provider>
     </entry>
