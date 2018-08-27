@@ -616,7 +616,7 @@ hr {
   font-weight: 700;
 }
 
-.arrow {
+.arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,6 +625,7 @@ hr {
   position: absolute;
   right: -42px;
   top: 50px;
+  z-index: 999;
 }
 
 .left-arrow {
@@ -635,6 +636,37 @@ hr {
 .right-arrow {
   padding: 20px;
   background: url("../images/right-arrow.png") no-repeat;
+}
+
+.testimonial-item {
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial-item.first {
+  left: 0;
+}
+
+.testimonial-item.second {
+  left: 100%;
+}
+
+.testimonial-item.third {
+  left: 200%;
 }
 
 .description, .features, .dimensions {

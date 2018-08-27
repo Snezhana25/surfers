@@ -69,9 +69,8 @@
   background-color: $white;
   width: 70%;
   margin: 0 auto;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
   position: relative;
-  display: inline-block;
+
   .action {
     width: 100%;
     height: 2px;
@@ -93,18 +92,13 @@
   align-items: center;
   font-weight: 700;
 }
-//.left-arrow, .right-arrow{
-//  position: absolute;
-//  right: 0;
-//  z-index: 10;
-//  display: inline-block;
-//}
-.arrow{
+.arrows{
   display: flex;
   justify-content: space-around;
   position: absolute;
   right: -42px;
   top: 50px;
+  z-index: 999;
 }
 .left-arrow{
   padding: 20px;
@@ -114,6 +108,31 @@
   padding: 20px;
   background: url("../images/right-arrow.png") no-repeat;
 }
+
+.testimonial-item {
+  width: 100%;
+  transition: transform 1s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
+}
+.testimonial-item.first {
+  left: 0;
+}
+.testimonial-item.second {
+  left: 100%;
+}
+.testimonial-item.third {
+  left: 200%;
+}
+.wrap-carusel{
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+}
+
 
 
 
