@@ -362,8 +362,8 @@ hr {
 }
 
 .card {
-  margin-top: 150px;
   text-align: center;
+  position: relative;
 }
 
 .read-more {
@@ -583,10 +583,7 @@ hr {
   background-color: #fff;
   width: 70%;
   margin: 0 auto;
-  -webkit-box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
-          box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
   position: relative;
-  display: inline-block;
 }
 
 .card-size .action {
@@ -655,6 +652,8 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
+          box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
 }
 
 .testimonial-item.first {
@@ -667,6 +666,12 @@ hr {
 
 .testimonial-item.third {
   left: 200%;
+}
+
+.wrap-carusel {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
 }
 
 .description, .features, .dimensions {

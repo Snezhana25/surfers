@@ -635,45 +635,6 @@ hr {
   background: url("../images/right-arrow.png") no-repeat;
 }
 
-.testimonial-item {
-  width: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
-          box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
-}
-
-.testimonial-item.first {
-  left: 0;
-}
-
-.testimonial-item.second {
-  left: 100%;
-}
-
-.testimonial-item.third {
-  left: 200%;
-}
-
-.wrap-carusel {
-  position: relative;
-  width: 70%;
-  overflow: hidden;
-}
-
 .description, .features, .dimensions {
   text-transform: uppercase;
   color: #000;

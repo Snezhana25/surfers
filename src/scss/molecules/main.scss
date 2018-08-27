@@ -109,29 +109,24 @@
   background: url("../images/right-arrow.png") no-repeat;
 }
 
-.testimonial-item {
-  width: 100%;
-  transition: transform 1s;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
-}
-.testimonial-item.first {
-  left: 0;
-}
-.testimonial-item.second {
-  left: 100%;
-}
-.testimonial-item.third {
-  left: 200%;
-}
-.wrap-carusel{
-  position: relative;
-  width: 70%;
-  overflow: hidden;
-}
+//.testimonial-item {
+//  width: 100%;
+//  transition: transform 1s;
+//  position: absolute;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
+//}
+//.testimonial-item.first {
+//  left: 0;
+//}
+//.testimonial-item.second {
+//  left: 100%;
+//}
+//.testimonial-item.third {
+//  left: 200%;
+//}
 
 
 
