@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfbb6ac9-26e8-45ff-a396-e6317bf14fc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/molecules/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/molecules/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +46,7 @@
         <counts>
           <entry key="html" value="1073" />
           <entry key="js" value="403" />
-          <entry key="scss" value="1726" />
+          <entry key="scss" value="1727" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -54,7 +54,7 @@
           <entry key="HTML" value="1073" />
           <entry key="JavaScript" value="403" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="SCSS" value="1715" />
+          <entry key="SCSS" value="1716" />
         </counts>
       </usages-collector>
     </session>
@@ -111,8 +111,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scss/molecules/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -151,8 +151,8 @@
       <find>app</find>
       <find>active-photo</find>
       <find>right-title</find>
-      <find>nav-bar</find>
       <find>.read-more</find>
+      <find>nav-bar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,50 +224,6 @@
               <item name="surfers" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="atoms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surfers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surfers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="molecules" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -309,17 +265,17 @@
       <option name="presentableId" value="Default" />
       <updated>1534850797453</updated>
       <workItem from="1534850799659" duration="32501000" />
-      <workItem from="1534959929664" duration="8858000" />
+      <workItem from="1534959929664" duration="9501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41359000" />
+    <option name="totallyTimeSpent" value="42002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="27" width="1270" height="806" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16449511" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16449511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -335,7 +291,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38235295" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38235295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,10 +468,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/atoms/watermark.scss">
+    <entry file="file://$PROJECT_DIR$/src/scss/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="260">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="94" column="33" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -533,24 +496,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/base/_base.scss">
+    <entry file="file://$PROJECT_DIR$/src/scss/atoms/watermark.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="94" column="33" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/molecules/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>

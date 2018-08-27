@@ -511,6 +511,8 @@ hr {
       justify-content: space-around;
   position: relative;
   padding: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .description-surfboards .triangle {
@@ -612,6 +614,27 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: -42px;
+  top: 50px;
+}
+
+.left-arrow {
+  padding: 20px;
+  background: url("../images/left-arrow.png") no-repeat;
+}
+
+.right-arrow {
+  padding: 20px;
+  background: url("../images/right-arrow.png") no-repeat;
 }
 
 .description, .features, .dimensions {

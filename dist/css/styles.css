@@ -511,6 +511,8 @@ hr {
       justify-content: space-around;
   position: relative;
   padding: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .description-surfboards .triangle {
