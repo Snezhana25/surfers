@@ -6,15 +6,27 @@
   line-height: 26px;
   margin-right: 8px;
   padding-bottom: 8px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
-.tabs>.content-right {
+.tabs .content-right {
   display: none;
-  padding: 15px;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: fadeIn;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 27px;
+
 }
+
+//display: none;
+//margin-top: 27px;
+//font-family: 'Raleway', sans-serif;
+//line-height: 1.5;
+//text-align: left;
 
 @-webkit-keyframes fadeIn {
   from {
@@ -32,20 +44,41 @@
     opacity: 1;
   }
 }
-.tabs>input {
+.tabs input {
   display: none;
   position: absolute;
 }
-.tabs>label{
+.tabs label{
   display: inline-block;
 }
-.tabs>label:hover {
+.tabs label:hover {
   cursor: pointer;
   border-bottom: 3px solid #00b0ff;
 }
-.tabs>input:checked+label {
-  border-bottom: 3px solid #00b0ff;
+.tabs input:checked+label {
+  border-bottom: 3px solid #00b0ff !important;
 }
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3{
+
+
+#tabs1:checked~#content-tabs1,
+#tabs2:checked~#content-tabs2,
+#tabs3:checked~#content-tabs3{
+  display: block;
+}
+
+#t1:checked~#c-tabs1,
+#t2:checked~#c-tabs2,
+#t3:checked~#c-tabs3{
+  display: block;
+}
+
+#t11:checked~#c-tabs11,
+#t22:checked~#c-tabs22,
+#t33:checked~#c-tabs33{
+  display: block;
+}
+#t111:checked~#c-tabs111,
+#t222:checked~#c-tabs222,
+#t333:checked~#c-tabs333{
   display: block;
 }

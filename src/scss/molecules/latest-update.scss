@@ -1,0 +1,50 @@
+.latest-updates{
+    .latest-updates-text{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: $black;
+      text-transform: uppercase;
+
+    }
+    .latest-card{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 40px;
+
+      .offers{
+        max-width:270px;
+        width: 100%;
+        transition: 0.5s;
+        margin: 0 0 0 30px;
+
+        p{
+          padding: 25px;
+          text-align: left;
+          color: $offers-text;
+          font-family: 'Raleway', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      .offers:first-child{
+        margin-left: 0;
+      }
+
+      .offers:hover{
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+      }
+      .offers:hover p{
+        color:$blue;
+      }
+
+    }
+
+}
+

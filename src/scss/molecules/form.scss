@@ -1,0 +1,46 @@
+.mail{
+  width: 70%;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 129px;
+
+  .email{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0 30px 10px 30px;
+    color: $white;
+  }
+  .email::placeholder{
+    color: #4d4d4d;
+    text-align: left;
+  }
+  .email:focus {
+    outline: none;
+  }
+  .email-input{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #4d4d4d;
+    position: relative;
+  }
+  .submit{
+    background: url("../images/btn-email.svg");
+    position: absolute;
+    right: 0;
+    border: none;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  .img-email{
+    position: absolute;
+    left: 0;
+    top:5px;
+    bottom: 0;
+  }
+
+
+}

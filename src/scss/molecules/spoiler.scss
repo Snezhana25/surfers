@@ -1,0 +1,49 @@
+.spoiler{
+  display: block;
+  text-align: left;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+}
+.btn2 a {
+  display: block;
+  cursor: pointer;
+  color: silver;
+  padding-top: 1em;
+  text-align: right;
+
+}
+.text {
+  display: block;
+  padding: 16px;
+  margin: 16px;
+  border: 1px dashed silver;
+  height: auto;
+  transition-timing-function: linear;
+}
+.spoiler input[type=checkbox] {display: none; }
+.spoiler input[type=checkbox] + .text {display: none; }
+.spoiler input[type=checkbox]:checked + .text {display: block; }
+
+.btn:hover{
+  cursor:pointer;
+  transition: all .5s;
+}
+.btn:before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ff8422;
+  height: 4px;
+  transition: all .5s;
+}
+.btn:hover:before {
+  width: 100%;
+}

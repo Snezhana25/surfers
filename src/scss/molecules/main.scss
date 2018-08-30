@@ -9,12 +9,103 @@
   position: relative;
   padding: 45px;
   object-fit: cover;
+  overflow: hidden;
+  transition: 0.5s;
 
   .triangle {
     position: absolute;
     left: 0;
   }
+}
 
+.item-slide {
+  position: relative;
+  width: 100%;
+}
+
+//.description-surfboards:before{
+//  content: 'boards';
+//  position: absolute;
+//  width: 100%;
+//  z-index: 10;
+//  top: 0;
+//  bottom: 0;
+//  right: 0;
+//  letter-spacing: 20px;
+//  color: #f7f7f7;
+//  font-weight: 700;
+//  font-size: 150px;
+//  transform: rotate(270deg);
+//  display: flex;
+//  justify-content: space-between;;
+//  flex-direction: column;
+//}
+
+.item-slide tns-item tns-slide-active{
+  position: relative;
+}
+
+.tns-controls button{
+  border: none;
+}
+
+.tns-outer [data-controls="prev"]{
+  background:url("../images/left-arrow.png") no-repeat;
+  background-size: cover;
+}
+.tns-outer [data-controls="next"]{
+  background:url("../images/right-arrow.png") no-repeat;
+  background-size: cover;
+}
+
+.tns-outer [data-controls="next"]:focus {
+  outline: none;
+}
+
+.tns-outer [data-controls="prev"]:focus {
+  outline: none;
+}
+
+[data-controls="prev"]:hover{
+  background-color: $light-blue;
+  cursor:pointer;
+  transition: all .5s;
+}
+[data-controls="prev"]:before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ff8422;
+  height: 2px;
+  transition: all .5s;
+}
+[data-controls="prev"]:hover:before {
+  width: 50%;
+}
+
+[data-controls="next"]:hover{
+  background-color: $light-blue;
+  cursor:pointer;
+  transition: all .5s;
+}
+[data-controls="next"]:before{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ff8422;
+  height: 2px;
+  transition: all .5s;
+}
+[data-controls="next"]:hover:before {
+  width: 50%;
 }
 
 .block-left, .block-right {
@@ -54,11 +145,7 @@
   font-weight: 700;
   margin-bottom: 41px;
   text-align: left;
-}
-
-.content-right {
-  display: none;
-  margin-top: 27px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .show-content {
@@ -68,21 +155,24 @@
 .card-size {
   background-color: $white;
   width: 70%;
+  min-height: 440px;
+  height: auto;
   margin: 0 auto;
   position: relative;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
 
   .action {
     width: 100%;
     height: 2px;
     border-bottom: 3px solid $light-blue;
   }
-
 }
 
 .block-price {
   display: flex;
   margin-top: 36px;
   margin-bottom: 84px;
+  font-family: 'Montserrat', sans-serif;
 }
 .price{
   font-size: 24px;
@@ -92,41 +182,11 @@
   align-items: center;
   font-weight: 700;
 }
-.arrows{
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  right: -42px;
-  top: 50px;
-  z-index: 999;
-}
-.left-arrow{
-  padding: 20px;
-  background: url("../images/left-arrow.png") no-repeat;
-}
-.right-arrow{
-  padding: 20px;
-  background: url("../images/right-arrow.png") no-repeat;
-}
 
-//.testimonial-item {
-//  width: 100%;
-//  transition: transform 1s;
-//  position: absolute;
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
-//}
-//.testimonial-item.first {
-//  left: 0;
-//}
-//.testimonial-item.second {
-//  left: 100%;
-//}
-//.testimonial-item.third {
-//  left: 200%;
-//}
+
+
+
+
 
 
 
