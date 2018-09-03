@@ -1,18 +1,35 @@
-.watermark {
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  transform: rotate(270deg);
-}
-
-.watermark::after {
-  content: attr(data-watermark);
+.mark {
   position: relative;
-  right: 0px;
-  color: rgba(0, 0, 0, .3);
-  font-size: 100px;
-  font-weight: 700;
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  height: 117px;
+}
+.watermark {
+  font-size: 130px;
   text-transform: uppercase;
+  letter-spacing: 53px;
+  font-weight: 900;
+  color: rgba(247, 247, 247, 1);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -37px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
 }
+.watermark-card{
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+

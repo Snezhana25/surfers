@@ -12,7 +12,9 @@
     "gulp": "gulp",
     "deploy": "gulp build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tiny-slider": "^2.8.5"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",

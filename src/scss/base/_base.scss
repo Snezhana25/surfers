@@ -46,6 +46,7 @@ h6 {
 .container{
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 ul li{
@@ -69,12 +70,74 @@ h1{
   letter-spacing: 1px;
   cursor: none;
 }
+.menu-btn{
+  display:none;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    width: 100%;
+    height: 3px;
+    background: $black;
+    margin: 5px;
+  }
+
+}
+
+.header .wrap .top-nav{
+  margin: 0 auto;
+}
+@keyframes flipdown{
+  from{
+    transform: rotateX(-180deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes flipup{
+  from{
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  to{
+    transform: rotateX(-180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.open.magic-nav li:nth-child(1){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .3s both;
+}
+.open.magic-nav li:nth-child(2){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .4s both;
+}
+.open.magic-nav li:nth-child(3){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s both;
+}
+.open.magic-nav li:nth-child(4){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .6s both;
+}
+.open.magic-nav li:nth-child(5){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .7s both;
+}
+.open.magic-nav li:nth-child(6){
+  animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .8s both;
+}
+
 .soc-icon a{
-  display: inline-block;
   width: 36px;
   height: 36px;
   margin-left: 10px;
   transition: .8s ease-in-out;
+  display: inline-block;
 }
 .soc-icon a:hover{
   transform: rotate(360deg);
@@ -83,14 +146,17 @@ h1{
   text-align: center;
   margin-top: 121px;
   font-style: italic;
+
   p{
     font-size: 24px;
     color: $white;
+    font-family: 'Playfair Display', serif;
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
   }
 }
-.content-right{
-  text-align: left;
-}
+
 hr {
   border: none;
   height: 1px;
@@ -104,16 +170,26 @@ hr {
 .card{
   text-align: center;
   position: relative;
+  margin-top: 150px;
 }
 .read-more{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  padding: 0 0 5px;
   color: $light-blue;
   border-bottom: 2px solid $light-blue;
   font-size: 16px;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+
 }
+
+.soc-info, .latest-updates, .foo-wrap{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
 
 
 

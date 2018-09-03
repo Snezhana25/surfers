@@ -14,6 +14,23 @@
       justify-content: center;
 
     }
+    .autor{
+      justify-content: flex-start;
+      .autor-footer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+        .dot{
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #4d4d4d;
+          margin: 0 10px 0 10px;
+        }
+      }
+
+    }
+
   }
   .menu-footer{
     width: 100%;
@@ -44,7 +61,6 @@
         color: $white;
         font-size: 14px;
         font-weight: 400;
-
         font-family: 'Raleway', sans-serif;
 
       }

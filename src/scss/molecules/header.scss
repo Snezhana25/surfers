@@ -6,14 +6,15 @@
 
   .wrap {
     margin: 0 auto;
-    padding: 0 10px;
     max-width: 1200px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding-top: 33px;
-
+    padding: 33px 10px;
+    .magic-nav{
+      display: flex;
+    }
     .top-nav {
       display: flex;
       justify-content: center;
@@ -52,10 +53,13 @@
         li:hover:before {
           width: 100%;
         }
-
-
       }
     }
+    .soc-icon{
+      display: flex;
+      flex-direction: row;
+    }
   }
+
 
 }
