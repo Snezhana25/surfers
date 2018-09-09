@@ -1,84 +1,92 @@
-.description, .features, .dimensions {
-  text-transform: uppercase;
-  color: $black;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-right: 8px;
-  padding-bottom: 8px;
-  font-family: 'Raleway', sans-serif;
 
-}
 
-.tabs .content-right {
-  display: none;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: fadeIn;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 27px;
+.tabs {
+  .content-right {
+    display: none;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    font-family: $font-family-Raleway;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 27px;
 
-}
-
-//display: none;
-//margin-top: 27px;
-//font-family: 'Raleway', sans-serif;
-//line-height: 1.5;
-//text-align: left;
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
   }
-  to {
-    opacity: 1;
+  .description, .features, .dimensions {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-family: 'Raleway', sans-serif;
+
   }
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-  to {
-    opacity: 1;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-}
-.tabs input {
-  display: none;
-  position: absolute;
-}
-.tabs label{
-  display: inline-block;
-}
-.tabs label:hover {
-  cursor: pointer;
-  border-bottom: 3px solid #00b0ff;
-}
-.tabs input:checked+label {
-  border-bottom: 3px solid #00b0ff !important;
+  .tabs input {
+    display: none;
+    position: absolute;
+  }
+  .tabs label{
+    display: inline-block;
+  }
+  .tabs label:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #00b0ff;
+  }
+  .tabs input:checked+label {
+    border-bottom: 3px solid #00b0ff !important;
+  }
+
+  #tabs4:checked~#content-tabs4,
+  #tabs5:checked~#content-tabs5,
+  #tabs6:checked~#content-tabs6{
+    display: block;
+  }
+
+  #tabs1:checked~#content-tabs1,
+  #tabs2:checked~#content-tabs2,
+  #tabs3:checked~#content-tabs3{
+    display: block;
+  }
+
+@media screen and (max-width: 823px) {
+  .tabs{
+    text-align: center;
+  }
+
 }
 
+  @media screen and (max-width: 414px) {
+    .slider-container{
+      .information-slider {
+        .tabs {
+          .description, .features, .dimensions {
+            font-size: 16px;
+            margin-right: 14px;
 
-#tabs1:checked~#content-tabs1,
-#tabs2:checked~#content-tabs2,
-#tabs3:checked~#content-tabs3{
-  display: block;
-}
+          }
+        }
+      }
 
-#t1:checked~#c-tabs1,
-#t2:checked~#c-tabs2,
-#t3:checked~#c-tabs3{
-  display: block;
-}
-
-#t11:checked~#c-tabs11,
-#t22:checked~#c-tabs22,
-#t33:checked~#c-tabs33{
-  display: block;
-}
-#t111:checked~#c-tabs111,
-#t222:checked~#c-tabs222,
-#t333:checked~#c-tabs333{
-  display: block;
-}
+    }
+  }

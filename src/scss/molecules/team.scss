@@ -8,7 +8,7 @@
 }
 
 .team-mark{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family-Montserrat;
   text-transform: uppercase;
   letter-spacing: 25px;
   font-weight: 900;
@@ -16,4 +16,21 @@
   text-align: center;
   width: 100%;
   font-size: 150px;
+}
+
+@media screen and (max-width: 823px) {
+  .team{
+    margin: 50px auto;
+    .team-mark{
+      font-size: 50px;
+      letter-spacing: normal;
+    }
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+  .team{
+    margin: 50px auto;
+  }
 }

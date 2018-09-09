@@ -9,7 +9,6 @@
       font-size: 18px;
       color: $black;
       text-transform: uppercase;
-
     }
     .latest-card{
       display: flex;
@@ -22,7 +21,6 @@
         width: 100%;
         transition: 0.5s;
         margin: 0 0 0 30px;
-
         p{
           padding: 25px;
           text-align: left;
@@ -36,7 +34,6 @@
       .offers:first-child{
         margin-left: 0;
       }
-
       .offers:hover{
         box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
       }
@@ -47,4 +44,20 @@
     }
 
 }
+
+@media screen and (max-width: 414px) {
+  .latest-updates{
+    .latest-card {
+      flex-direction: column;
+      .offers{
+        margin: 0 auto;
+      }
+      .offers:first-child {
+        margin: 0px auto;
+      }
+
+    }
+  }
+}
+
 

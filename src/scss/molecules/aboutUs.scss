@@ -15,13 +15,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family-Montserrat;
 }
 
 .text-aboutUas{
   width: 60%;
   margin-left: 100px;
-
   .text-center{
     text-align: center;
     color: #000000;
@@ -36,11 +35,9 @@
     color: $black;
     font-size: 22px;
     line-height: 2;
+    font-family: $font-family-Playfair-Display;
+    font-style: italic;
 
-    p{
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-    }
   }
   .read-more{
     position: relative !important;
@@ -48,7 +45,7 @@
     margin-top: 33px;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-Montserrat;
 
   }
 
@@ -63,11 +60,15 @@
   iframe{
     width: 100%;
     height: 100%;
+    border: none;
   }
   .btn-img-video{
       width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
+      background: url("../images/extrim.png") no-repeat center;
+      background-size: cover;
   }
 
   .btn-img-video img {
@@ -113,42 +114,74 @@
     }
   }
 
-  .video-button:before {
-    margin-top: -60px;
-    margin-left: -60px;
-    height: 120px;
-    width: 120px;
-  }
+  .video-button {
+    & :before {
+      margin-top: -60px;
+      margin-left: -74px;
+      height: 120px;
+      width: 120px;
+    }
 
-  .video-button:after {
-    margin-top: -48px;
-    margin-left: -46px;
-    height: 90px;
-    width: 90px;
-  }
+    & :after {
+      margin-top: -46px;
+      margin-left: -59px;
+      height: 90px;
+      width: 90px;
+      border: 3px solid #fff;
+    }
 
-  .video-button:after, .video-button:before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 50%;
-    border: 1px solid #fff;
-    border-radius: 50%;
-  }
-  .video-button:after {
-    border: 3px solid #fff;
-  }
-  .video-button span {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -16px;
-    margin-left: -6px;
-    content: "";
-    border-width: 16px 22px;
-    border-color: transparent transparent transparent #fff;
-    border-style: solid;
+    & :after, & :before{
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+
+    & span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -16px;
+      margin-left: -6px;
+      content: "";
+      border-width: 16px 22px;
+      border-color: transparent transparent transparent #fff;
+      border-style: solid;
+    }
+
   }
 }
 
+@media screen and (max-width: 823px) {
+  .aboutUas {
+    flex-direction: column;
+    height: auto;
+    .WeareSurfers {
+      width: 100%;
+      margin-top: 100px;
+    }
+    .iframe{
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUas{
+    .iframe{
+      margin-left: 0;
+    }
+    .text-aboutUas{
+      width: 100%;
+      margin-left: 0;
+      padding: 0 40px;
+      .text-center{
+        font-size: 14px;
+      }
+    }
+  }
+}
 

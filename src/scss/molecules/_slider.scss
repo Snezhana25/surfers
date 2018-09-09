@@ -1,0 +1,204 @@
+
+
+//slider-2
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-top: 150px;
+  //.information-slider:before {
+  //  content: "";
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  //border: 200px solid transparent;
+  //  //border-top: 200px solid $light-blue;
+  //  //border-left: 200px solid $light-blue;
+  //}
+  .information-slider {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    background: $white;
+    height: 617px;
+    & input {
+      display: none;
+    }
+    .basic-wrap {
+      display: flex;
+      padding: 45px;
+      box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.34);
+      opacity: 0;
+      flex-direction: row;
+      background: $white;
+      position: absolute;
+      z-index: 0;
+      transform: scale(1.3);
+      transition: all ease-in-out .6s, opacity ease-in-out .6s;
+      .click-photo {
+        display: flex;
+        margin-right: 45px;
+        .choice-photo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .tehnology {
+        width: 50%;
+        position: relative;
+        z-index: 10;
+        .tabs-photo {
+          width: 61px;
+          height: 70px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          margin-bottom: 3px;
+          overflow: hidden;
+          img {
+            pointer-events: none;
+          }
+        }
+        .tabs-photo img {
+          vertical-align: bottom;
+          display: flex;
+          height: 100%;
+        }
+        .activeTab {
+          border: 2px solid $light-blue;
+        }
+        .block-price {
+          margin-top: 47px;
+          display: flex;
+          align-items: center;
+          .price {
+            margin-right: 49px;
+            font-weight: 700;
+            font-size: 24px;
+            font-family: $font-family-Montserrat;
+          }
+        }
+        .view-href {
+          margin-top: 96px;
+        }
+        .right-title {
+          margin-bottom: 68px;
+          font-size: 20px;
+          color: $black;
+          font-weight: 700;
+          font-family: $font-family-Montserrat;
+        }
+      }
+    }
+    .controls {
+      left: 45%;
+      position: absolute;
+
+      .dot {
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 25px 12px 0 16px;
+        position: relative;
+        width: 8px;
+        border-radius: 50%;
+        z-index: 100;
+
+      }
+
+      .dot:after {
+        border: 2px solid #ddd;
+        content: " ";
+        display: block;
+        height: 12px;
+        left: -4px;
+        position: absolute;
+        bottom: -4px;
+        width: 12px;
+        border-radius: 50%;
+      }
+    }
+
+    .dot:hover,
+    #slide1:checked ~ .controls .dot:nth-of-type(1),
+    #slide2:checked ~ .controls .dot:nth-of-type(2) {
+      background: #ddd;
+    }
+
+    #slide1:checked ~ .slide1,
+    #slide2:checked ~ .slide2 {
+      opacity: 1;
+      z-index: 5;
+      transform: scale(1);
+    }
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider-container{
+    .information-slider{
+      height: 921px;
+      .basic-wrap{
+        flex-direction: column;
+        .tehnology{
+          width: 100%;
+          .view-href {
+            margin-top: 30px;
+          }
+        }
+        .click-photo{
+          margin-right: 0;
+          justify-content: center;
+
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 823px) {
+  .slider-container{
+    .information-slider{
+      width: 90%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container{
+    .information-slider{
+      width: 90%;
+      .basic-wrap {
+        .tehnology {
+          .right-title {
+            margin-bottom: 25px;
+          }
+          .block-price{
+            margin-top: 47px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+  .slider-container{
+    margin-top: 50px;
+    .information-slider{
+      width: 100%;
+      height: 866px;
+      .controls{
+        left: 40%;
+      }
+      .basic-wrap {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+

@@ -6,25 +6,35 @@
   font-family: 'Montserrat', sans-serif;
   margin-top: 129px;
 
-  .email{
-    background: transparent;
-    border: none;
-    width: 100%;
-    padding: 0 30px 10px 30px;
-    color: $white;
-  }
-  .email::placeholder{
-    color: #4d4d4d;
-    text-align: left;
-  }
-  .email:focus {
-    outline: none;
-  }
+
   .email-input{
     display: flex;
     flex-direction: row;
     border-bottom: 2px solid #4d4d4d;
     position: relative;
+
+    .email{
+      background: transparent;
+      border: none;
+      width: 100%;
+      padding: 0 30px 10px 30px;
+      color: $light-blue;
+    }
+    .email::placeholder{
+      color: #4d4d4d;
+      text-align: left;
+    }
+    .email:focus {
+      outline: none;
+    }
+
+    .email{
+      caret-color: $light-blue;
+    }
+    .email::selection {
+      background: rgba(255, 132, 34, .8);
+    }
+
   }
   .submit{
     background: url("../images/btn-email.svg");
@@ -43,4 +53,16 @@
   }
 
 
+
+
+}
+
+@media screen and (max-width: 414px) {
+  .footer{
+    .menu-footer {
+      .mail{
+        margin: 0 auto;
+      }
+    }
+  }
 }

@@ -1,49 +1,131 @@
-.spoiler{
-  display: block;
-  text-align: left;
-}
+//.spoiler{
+//  display: block;
+//  text-align: left;
+//  .btn {
+//    cursor: pointer;
+//    position: relative;
+//  }
+//  //.btn2 a {
+//  //  display: block;
+//  //  cursor: pointer;
+//  //  color: silver;
+//  //  padding-top: 1em;
+//  //  text-align: right;
+//  //
+//  //}
+//  .btn:hover{
+//    cursor:pointer;
+//    transition: all .5s;
+//  }
+//  .btn:before{
+//    position: absolute;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//    margin: auto;
+//    width: 0%;
+//    content: '.';
+//    color: transparent;
+//    background: #ff8422;
+//    height: 4px;
+//    transition: all .5s;
+//  }
+//  .btn:hover:before {
+//    width: 100%;
+//  }
+//  .text {
+//    display: block;
+//    padding: 16px;
+//    margin: 16px;
+//    border: 1px dashed silver;
+//    height: auto;
+//    transition-timing-function: linear;
+//  }
+//}
+//.spoiler input[type=checkbox] {display: none; }
+//.spoiler input[type=checkbox] + .text {display: none; }
+//.spoiler input[type=checkbox]:checked + .text {display: block; }
+//
+//
+//
+//
 
-.btn {
-  cursor: pointer;
+
+details{
+  // Косметические улучшения
   position: relative;
-}
-.btn2 a {
-  display: block;
-  cursor: pointer;
-  color: silver;
-  padding-top: 1em;
-  text-align: right;
+  margin: 30px 0 10px;
+  min-height: 16px;
+  max-height: 30px;
+  transition: min-height .15s linear, max-height .15s linear;
+  overflow: hidden;
+
+  // Заголовок
+  summary {
+    color: $light-blue;
+    padding-bottom: 3px;
+    // Удаление стандартного маркера
+    //&::-webkit-details-marker {
+    //  display: none;
+    //}
+    //&::-moz-list-bullet {
+    //  list-style-type: none;
+    //}
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+
+    &:hover {
+      color: $orang;
+    }
+    //// Контент,  после заголовка
+    & ~ * {
+      padding-top: 10px;
+      opacity: 0;
+      transition: opacity .15s linear;
+    }
+
+  }
+  summary:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: $orang;
+    height: 4px;
+    transition: all .5s;
+
+  }
+
+  summary:hover:before {
+    width: 100%;
+  }
+
+  // Открытый спойлер
+  &[open] {
+    min-height: 10px;
+    max-height: 200px;
+
+    summary {
+      & ~ * {
+        opacity: 1;
+        transition: opacity .15s linear;
+      }
+
+    }
+
+  }
+
+
 
 }
-.text {
-  display: block;
-  padding: 16px;
-  margin: 16px;
-  border: 1px dashed silver;
-  height: auto;
-  transition-timing-function: linear;
-}
-.spoiler input[type=checkbox] {display: none; }
-.spoiler input[type=checkbox] + .text {display: none; }
-.spoiler input[type=checkbox]:checked + .text {display: block; }
 
-.btn:hover{
-  cursor:pointer;
-  transition: all .5s;
-}
-.btn:before{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #ff8422;
-  height: 4px;
-  transition: all .5s;
-}
-.btn:hover:before {
-  width: 100%;
-}
+
+
+

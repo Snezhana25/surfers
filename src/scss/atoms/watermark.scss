@@ -3,24 +3,19 @@
   margin-top: 180px;
   display: flex;
   justify-content: center;
-  height: 117px;
+  transform: translateY(40px);
 }
-.watermark {
+.watermark{
   font-size: 130px;
   text-transform: uppercase;
-  letter-spacing: 53px;
+  letter-spacing: 45px;
+  font-family: $font-family-Montserrat;
   font-weight: 900;
   color: rgba(247, 247, 247, 1);
   text-align: center;
   position: relative;
   width: 100%;
-  p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -37px;
-    font-family: 'Montserrat', sans-serif;
-  }
+
 
 }
 .watermark-card{
@@ -28,6 +23,34 @@
   display: inline-block;
 }
 
+@media screen and (max-width: 823px){
+  .watermark{
+    letter-spacing: normal;
+  }
+  .mark{
+    transform: translateY(-40px);
+    .watermark{
+      letter-spacing: normal;
+    }
+  }
+  .soc-info{
+    .flex-row{
+      .watermark{
+        font-size: 40px;
+        letter-spacing: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .mark{
+    margin-top: 50px;
+  }
+  .watermark{
+    font-size: 30px;
+  }
+}
 
 
 

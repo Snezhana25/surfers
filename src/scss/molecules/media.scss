@@ -1,194 +1,187 @@
-@media screen and (max-width: 1024px) {
-  .card-size{
-    width: 90%;
-  }
-  .team{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 823px) {
-  .aboutUas{
-    flex-direction: column;
-    height: auto;
-  }
-  .top-nav{
-    padding: 10px;
-
-  }
-  .tns-controls{
-    right: 0;
-    top: -39px;
-  }
-  .mark{
-    margin-top: 50px;
-  }
-  .WeareSurfers{
-    width: 100%;
-    margin-top: 100px;
-  }
-  .iframe{
-    width: 100%;
-    margin-top: 40px;
-  }
-  .watermark, .team-mark, .soc-info .flex-row .watermark{
-    font-size: 40px;
-    letter-spacing: normal;
-  }
-  .watermark p{
-    bottom: 0;
-  }
-  .menu-btn{
-    display: flex;
-    position: relative;
-    z-index: 9999;
-  }
-  .header .wrap .magic-nav{
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right:0;
-    transform: translateX(100%);
-    background: url("../images/Corner.png") white no-repeat;
-    background-size: contain;
-    transition: all .8s ease;
-    &.open {
-      transform: translateX(0);
-    }
-
-  }
-
-  .header .wrap .top-nav ul{
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  .iframe{
-    margin-left: 0;
-  }
-  .text-aboutUas{
-    width: 100%;
-    margin-left: 0;
-    padding: 0 10px;
-  }
-  .header .wrap .top-nav.open ul{
-    flex-direction: column;
-  }
-
-  .header .wrap{
-    justify-content: space-between;
-  }
-
-  .text-aboutUas .text-center{
-    font-size: 14px;
-  }
-
-}
-
-@media screen and (max-width: 414px) {
-  .header .wrap .soc-icon{
-    margin-right: 20px;
-  }
-
-  .wrap-header{
-    background-size: cover;
-  }
-  .title h1{
-    font-size: 40px;
-  }
-  .card-size{
-    width: 100%;
-  }
-  .description-surfboards{
-    padding: 10px;
-  }
-  .description, .features, .dimensions{
-    font-size: 16px;
-  }
-  .block-price{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .price{
-    margin-right: 0;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .block-right{
-    margin-left: 0px;
-  }
-  .tab-example{
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 30px;
-  }
-  .description-surfboards{
-    flex-direction: column;
-  }
-  .latest-updates .latest-card{
-    flex-direction: column;
-  }
-  .latest-updates .latest-card .offers{
-    margin: 0 auto;
-  }
-  .latest-updates .latest-card .offers:first-child {
-    margin: 10px auto;
-  }
-  .soc-info{
-    flex-direction: column;
-  }
-  .soc-info .flex-row{
-    width: 100%;
-  }
-  .soc-info .instagram-link{
-    flex-direction: column;
-  }
-  .soc-info .instagram-link .link{
-    margin: 0 auto;
-    font-size: 16px;
-  }
-  .soc-info .instagram-link .link:last-child{
-    margin: 0 auto;
-  }
-  .soc-info .facebook-ph img {
-    margin-bottom: 0px;
-  }
-  .footer{
-    margin-top: 0;
-  }
-  .footer .foo-wrap{
-    flex-direction: column;
-  }
-  .footer .foo-wrap .footer-contact{
-    width: 100%;
-  }
-  .footer .menu-footer .first-menu, .footer .menu-footer .second-menu{
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-  .footer .foo-wrap .autor{
-    justify-content: center;
-  }
-  .footer .menu-footer .footer-nav{
-    justify-content: space-around;
-  }
-  .footer .foo-wrap .autor .autor-footer{
-    justify-content: center;
-    flex-direction: column;
-  }
-  .footer .menu-footer{
-    margin-left: 0px;
-  }
-  .mail{
-    margin: 0 auto;
-  }
-
-}
-
-@media screen and (max-width: 320px) {
-  .logo{
-    font-size: 20px;
-  }
-}
-
+////@media screen and (max-width: 1024px) {
+////  .card-size{
+////    width: 90%;
+////  }
+////  .team{
+////    width: 100%;
+////  }
+////}
+//@media screen and (max-width: 823px) {
+//  //.aboutUas{
+//  //  flex-direction: column;
+//  //  height: auto;
+//  //}
+//  //.top-nav{
+//  //  padding: 10px;
+//  //}
+//
+//  //.mark{
+//  //  margin-top: 50px;
+//  //}
+//  //.WeareSurfers{
+//  //  width: 100%;
+//  //  margin-top: 100px;
+//  //}
+//  //.iframe{
+//  //  width: 100%;
+//  //  margin-top: 40px;
+//  //}
+//  //.watermark, .team-mark, .soc-info .flex-row .watermark{
+//  //  font-size: 40px;
+//  //  letter-spacing: normal;
+//  //}
+//  //.watermark p{
+//  //  bottom: 0;
+//  //}
+//  //.menu-btn{
+//  //  display: flex;
+//  //  position: relative;
+//  //  z-index: 9999;
+//  //}
+//  //.header .magic-nav{
+//  //  flex-direction: column;
+//  //  position: absolute;
+//  //  top: 80px;
+//  //  right:0;
+//  //  transform: translateX(100%);
+//  //  background: url("../images/Corner.png") white no-repeat;
+//  //  background-size: contain;
+//  //  transition: all .8s ease;
+//  //  &.open {
+//  //    transform: translateX(0);
+//  //  }
+//  //
+//  //}
+//  //.header .top-nav ul{
+//  //  flex-direction: column;
+//  //}
+//
+//}
+//
+//@media screen and (max-width: 768px) {
+//  //.iframe{
+//  //  margin-left: 0;
+//  //}
+//  //.text-aboutUas{
+//  //  width: 100%;
+//  //  margin-left: 0;
+//  //  padding: 0 10px;
+//  //}
+//  //.header .top-nav.open ul{
+//  //  flex-direction: column;
+//  //}
+//  //
+//  //.header {
+//  //  justify-content: space-between;
+//  //}
+//
+//  //.text-aboutUas .text-center{
+//  //  font-size: 14px;
+//  //}
+//
+//}
+//
+//@media screen and (max-width: 414px) {
+//  //.header  .soc-icon{
+//  //  margin-right: 20px;
+//  //}
+//
+//  //.wrap-header{
+//  //  background-size: cover;
+//  //}
+//  //.title h1{
+//  //  font-size: 40px;
+//  //}
+//  //.card-size{
+//  //  width: 100%;
+//  //}
+//  //.description-surfboards{
+//  //  padding: 10px;
+//  //}
+//  //.description, .features, .dimensions{
+//  //  font-size: 16px;
+//  //}
+//  //.block-price{
+//  //  flex-direction: column;
+//  //  justify-content: center;
+//  //}
+//  //.price{
+//  //  margin-right: 0;
+//  //  justify-content: center;
+//  //  margin-bottom: 20px;
+//  //}
+//  //.block-right{
+//  //  margin-left: 0px;
+//  //}
+//  //.tab-example{
+//  //  align-items: center;
+//  //  flex-direction: row;
+//  //  margin-bottom: 30px;
+//  //}
+//  //.description-surfboards{
+//  //  flex-direction: column;
+//  //}
+//  //.latest-updates .latest-card{
+//  //  flex-direction: column;
+//  //}
+//  //.latest-updates .latest-card .offers{
+//  //  margin: 0 auto;
+//  //}
+//  //.latest-updates .latest-card .offers:first-child {
+//  //  margin: 10px auto;
+//  //}
+//  //.soc-info{
+//  //  flex-direction: column;
+//  //}
+//  //.soc-info .flex-row{
+//  //  width: 100%;
+//  //}
+//  //.soc-info .instagram-link{
+//  //  flex-direction: column;
+//  //}
+//  //.soc-info .instagram-link .link{
+//  //  margin: 0 auto;
+//  //  font-size: 16px;
+//  //}
+//  //.soc-info .instagram-link .link:last-child{
+//  //  margin: 0 auto;
+//  //}
+//  //.soc-info .facebook-ph img {
+//  //  margin-bottom: 0px;
+//  //}
+//  //.footer{
+//  //  margin-top: 0;
+//  //}
+//  //.footer .foo-wrap{
+//  //  flex-direction: column;
+//  //}
+//  //.footer .foo-wrap .footer-contact{
+//  //  width: 100%;
+//  //}
+//  //.footer .menu-footer .first-menu, .footer .menu-footer .second-menu{
+//  //  margin-right: 0;
+//  //  margin-bottom: 30px;
+//  //}
+//
+//  //.footer .menu-footer .footer-nav{
+//  //  justify-content: space-around;
+//  //}
+//  //.footer .foo-wrap .autor .autor-footer{
+//  //  justify-content: center;
+//  //  flex-direction: column;
+//  //}
+//  //.footer .menu-footer{
+//  //  margin-left: 0px;
+//  //}
+//  //.mail{
+//  //  margin: 0 auto;
+//  //}
+//
+//}
+//
+////@media screen and (max-width: 320px) {
+////  .logo{
+////    font-size: 20px;
+////  }
+////}
+//

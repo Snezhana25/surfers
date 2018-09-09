@@ -1,18 +1,22 @@
-.header {
-  width: 100%;
+.bg-header {
   position: relative;
-  height: 70px;
-  font-family: 'Montserrat', sans-serif;
-
-  .wrap {
+  width: 100%;
+  background: url("../images/header.jpg") no-repeat;
+  background-size: 100% 80%;
+  .header {
+    width: 100%;
+    position: relative;
+    height: 70px;
+    font-family: $font-family-Montserrat;
     margin: 0 auto;
     max-width: 1200px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 33px 10px;
-    .magic-nav{
+    align-items: center;
+    padding-top: 33px;
+    .magic-nav {
       display: flex;
     }
     .top-nav {
@@ -22,7 +26,7 @@
       & ul {
         display: flex;
 
-        li {
+        & li {
           display: flex;
           align-items: center;
           text-transform: uppercase;
@@ -32,12 +36,12 @@
           transition: all .5s;
           position: relative;
         }
-        li:hover{
+        & li:hover {
           background-color: $light-blue;
-          cursor:pointer;
+          cursor: pointer;
           transition: all .5s;
         }
-        li:before{
+        & li:before {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -50,16 +54,221 @@
           height: 2px;
           transition: all .5s;
         }
-        li:hover:before {
+        & li:hover:before {
           width: 100%;
         }
       }
     }
-    .soc-icon{
+    .soc-icon {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      & a {
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        transition: .8s ease-in-out;
+        display: inline-block;
+        border-radius: 50%;
+      }
+      & a:hover {
+        transform: rotate(360deg);
+      }
+      .facebook {
+        background: url("../images/facebook.svg") $black no-repeat center;
+      }
+      .instagram {
+        background: url("../images/instagram.svg") $black no-repeat center;
+      }
+      .mail-icon {
+        background: url("../images/mail.svg") $black no-repeat center;
+      }
+    }
+
+    .show {
+      & li:nth-child(1) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .3s both;
+      }
+      & li:nth-child(2) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .4s both;
+      }
+      & li:nth-child(3) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s both;
+      }
+      & li:nth-child(4) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .6s both;
+      }
+      & li:nth-child(5) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .7s both;
+      }
+      & li:nth-child(6) {
+        animation: flipdown .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) .8s both;
+      }
+    }
+
+    @keyframes flipdown {
+      from {
+        transform: rotateX(-180deg);
+        opacity: 0;
+      }
+      to {
+        transform: rotateX(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes flipup {
+      from {
+        transform: rotateX(0deg);
+        opacity: 1;
+        visibility: visible;
+      }
+      to {
+        transform: rotateX(-180deg);
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 
+  .menu-btn {
+    display: none;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: $black;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+    span {
+      width: 50%;
+      height: 2px;
+      background: $white;
+      margin: 2px;
+      border-radius: 5px;
+      transition: all .5s ease;
+    }
+    &.clicked {
+      span {
+        background: $light-blue;
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          transform: translateY(-3px) rotate(45deg);
+        }
+      }
+
+
+    }
+
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 121px;
+    font-style: italic;
+    font-family: $font-family-Playfair-Display;
+
+    p {
+      font-size: 24px;
+      color: $white;
+      font-family: $font-family-Playfair-Display;
+    }
+    h1 {
+      font-family: $font-family-Playfair-Display;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .bg-header {
+    .header {
+      .top-nav {
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        background: url("../images/Corner.png") white no-repeat;
+        background-size: contain;
+        transition: all .8s ease;
+        padding: 80px 0;
+        z-index: 10;
+        &.show {
+          transform: translateX(0);
+        }
+        & ul {
+          flex-direction: column;
+          width: 50%;
+          margin: 0 auto;
+          & li {
+            justify-content: center;
+            & a {
+              font-size: 20px;
+            }
+          }
+        }
+
+      }
+
+      .menu-btn {
+        display: flex;
+        position: relative;
+        z-index: 9999;
+      }
+
+      .soc-icon {
+        & a {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    .top-nav.show {
+      & ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bg-header{
+    .header{
+      .logo{
+        font-size: 25px;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .bg-header{
+    .header{
+      padding: 0 5px 0 5px;
+      .soc-icon{
+        margin-right: 10px;
+      }
+    }
+
+  }
 
 }
