@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dfbb6ac9-26e8-45ff-a396-e6317bf14fc9" name="Default Changelist" comment="add form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/themes/rebeccapurple.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/main.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/molecules/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/molecules/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/molecules/louder.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/molecules/louder.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/molecules/louder.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="296">
+              <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -468,11 +457,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221907000" />
+    <option name="totallyTimeSpent" value="222321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="9" width="1270" height="806" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82978725" visible="true" weight="0.20765473" />
       <window_info id="Structure" order="1" sideWeight="0.17021276" side_tool="true" weight="0.20765473" />
@@ -490,8 +478,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008143" side_tool="true" weight="0.4719888" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49918568" visible="true" weight="0.16246499" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008143" side_tool="true" weight="0.46638656" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49918568" visible="true" weight="0.46638656" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -800,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/molecules/louder.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="296">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
