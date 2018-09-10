@@ -1,12 +1,11 @@
 (function () {
     "use strict";
+        const loading = document.querySelector('.loading');
+        setTimeout(function() {
+            console.log("window loaded");
+            loading.style.visibility = "hidden";
+        }, 2000);
 
-
-    const loading = document.querySelector('.loading');
-    setTimeout(function() {
-        document.body.classList.remove('loading');
-        document.body.classList.add('loaded');
-    }, 3000);
 
     const tabs = document.querySelectorAll('.tabs-photo');
     const selectedImg = document.querySelector('.selectedImg');
