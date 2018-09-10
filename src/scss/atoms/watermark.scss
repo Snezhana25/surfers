@@ -52,6 +52,14 @@
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .mark{
+    transform: translateY(24px);
+    .watermark {
+      font-size: 100px;
+    }
+  }
+}
 
 
 

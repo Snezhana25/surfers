@@ -64,13 +64,12 @@ details{
   summary {
     color: $light-blue;
     padding-bottom: 3px;
-    // Удаление стандартного маркера
-    //&::-webkit-details-marker {
-    //  display: none;
-    //}
-    //&::-moz-list-bullet {
-    //  list-style-type: none;
-    //}
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::-moz-list-bullet {
+      list-style-type: none;
+    }
 
     display: inline-block;
     position: relative;

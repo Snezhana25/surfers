@@ -135,6 +135,17 @@
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .tabs{
+    .description, .features, .dimensions{
+      margin-right: 17px;
+    }
+
+  }
+}
+
+
+
 @media screen and (max-width: 1024px) {
   .slider-container{
     .information-slider{

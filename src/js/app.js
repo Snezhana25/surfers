@@ -1,5 +1,13 @@
 (function () {
     "use strict";
+
+
+    const loading = document.querySelector('.loading');
+    setTimeout(function() {
+        document.body.classList.remove('loading');
+        document.body.classList.add('loaded');
+    }, 3000);
+
     const tabs = document.querySelectorAll('.tabs-photo');
     const selectedImg = document.querySelector('.selectedImg');
     const sdImg = document.querySelector('.sdImg');
@@ -56,29 +64,35 @@
     menuBtn.addEventListener('click', function () {
         menuBtn.classList.toggle('clicked');
         topNav.classList.toggle('show');
+        document.body.classList.toggle('overlay');
         for (let i = 0; i < link.length; i++) {
             link[i].addEventListener('click', function () {
                 topNav.classList.remove("show");
                 menuBtn.classList.remove('clicked');
-
+                document.body.classList.remove('overlay');
             });
         }
 
     });
 
 
-    const scrollnav = document.querySelector('.top-nav');
-    let menu = true;
-    // const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    // const btn = document.querySelector('.menu-btn');
+    // const scrollnav = document.querySelector('.top-nav');
+    // let menu ;
+    // btn.addEventListener('click', function () {
+    //     if (scrollnav.classList.contains('show')) {
+    //         document.body.classList.add('overlay');
+    //         menu = true;
+    //         console.log(menu);
+    //     } else {
+    //         menu = false;
+    //         document.body.classList.remove('overlay');
+    //         console.log(menu);
+    //     }
+    //
+    // });
 
-    if (scrollnav.classList.contains('show')) {
-        console.log('true');
 
-    } else {
-        console.log('false');
-
-
-    }
 
 
 })();

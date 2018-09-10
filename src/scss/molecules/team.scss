@@ -18,9 +18,17 @@
   font-size: 150px;
 }
 
-@media screen and (max-width: 823px) {
+@media screen and (max-width: 1366px) {
   .team{
     margin: 50px auto;
+    .watermark {
+      font-size: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .team{
     .team-mark{
       font-size: 50px;
       letter-spacing: normal;
